@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sposoby podłączania styli do strony</title>
+</head>
+<body>
+  <h1>Sposoby podłączania styli do strony</h1>
+  <table border="1" cellpadding="10">
+    <tr>
+      <th>Sposób</th>
+      <th>Kod</th>
+    </tr>
+    <tr>
+      <td>Zewnętrzny arkusz stylów</td>
+      <td>&lt;link rel="Stylesheet" type="text/css" href="style.css" /&gt;</td>
+    </tr>
+    <tr>
+      <td>Styl lokalny</td>
+      <td>&lt;selektor style="cecha1: wartość1; cecha2: wartość2..."&gt;&lt;/selektor&gt;</td>
+    </tr>
+    <tr>
+      <td>Wewnętrzny arkusz stylów</td>
+      <td>
+        &lt;style type="text/css"&gt;<br>
+        &nbsp;&nbsp;selektor1 { cecha: wartość; cecha2: wartość2... }<br>
+        &nbsp;&nbsp;selektor2 { cecha: wartość; cecha2: wartość2... }<br>
+        &lt;/style&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>Alternatywny arkusz stylów</td>
+      <td>
+        &lt;link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" /&gt;<br>
+        &lt;link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt;<br>
+        &lt;link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" /&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>Import arkusza stylów</td>
+      <td>&lt;style type="text/css"&gt;<br>
+        &nbsp;&nbsp;@import url(adres zewnętrznego arkusza stylów);<br>
+        &lt;/style&gt;
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
