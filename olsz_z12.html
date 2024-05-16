@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rodzaje selektorów CSS</title>
+</head>
+<LINK href="olsz_z12.css" rel="stylesheet"type="text/CSS">
+<body>
+<body style="background-color:#AED6F1;">
+  <h1>Rodzaje jednostek HTML I CSS</h1>
+  <div class="info">
+    <h2>HTML - Najczęściej używane jednostki</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Jednostka</th>
+          <th>Opis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>px</td>
+          <td>Piksele - jednostka absolutna, niezależna od rozdzielczości ekranu.</td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td>Procenty - jednostka relatywna do wielkości rodzica.</td>
+        </tr>
+        <tr>
+          <td>em</td>
+          <td>Jednostka odpowiadająca aktualnej wielkości czcionki.</td>
+        </tr>
+        <tr>
+          <td>rem</td>
+          <td>Jednostka odpowiadająca wielkości czcionki elementu korzenia (root).</td>
+        </tr>
+        <tr>
+          <td>vh</td>
+          <td>Wysokość widoku - jednostka relatywna do wysokości okna przeglądarki.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>CSS - Najczęściej używane jednostki</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Jednostka</th>
+          <th>Opis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>px</td>
+          <td>Piksele - jednostka absolutna, niezależna od rozdzielczości ekranu.</td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td>Procenty - jednostka relatywna do wielkości rodzica.</td>
+        </tr>
+        <tr>
+          <td>em</td>
+          <td>Jednostka odpowiadająca aktualnej wielkości czcionki.</td>
+        </tr>
+        <tr>
+          <td>rem</td>
+          <td>Jednostka odpowiadająca wielkości czcionki elementu korzenia (root).</td>
+        </tr>
+        <tr>
+          <td>vw</td>
+          <td>Szerokość widoku - jednostka relatywna do szerokości okna przeglądarki.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ul>
+      <li>
+        <span class="important">Selektory proste:</span>
+        <ul>
+          <li>Selektory oparte na nazwie elementu HTML.</li>
+          <li>
+            <span class="important">Przykład:</span> <code>p { color: red; }</code>
+          </li>
+          <li>
+            Stylizuje wszystkie elementy p.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span class="important">Selektory złożone:</span>
+        <ul>
+          <li>Selektory oparte na relacji między elementami HTML.</li>
+          <li>
+            <span class="important">Przykład:</span> <code>div p { font-size: 16px; }</code>
+          </li>
+          <li>
+            Stylizuje wszystkie elementy p, które znajdują się wewnątrz elementów div.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <span class="important">Selektory atrybutów:</span>
+        <ul>
+          <li>Selektory oparte na atrybutach elementów HTML.</li>
+          <li>
+            <span class="important">Przykład:</span> <code>a[href^="https://"] { color: blue; }</code>
+          </li>
+          <li>
+            Stylizuje wszystkie linki z atrybutem href zaczynającym się od "https://".
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
